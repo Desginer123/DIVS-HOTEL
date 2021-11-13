@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.flex {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.--just-space {
+	justify-content: space-between;
+}
+
+.--just-center {
+	justify-content: center;
+}
+
+.--just-end {
+	justify-content: flex-end;
+}
+
+.--align-str {
+	align-items: stretch;
+}
+
+.--align-center {
+	align-items: center;
+}
+
+.--align-end {
+	align-items: flex-end;
+}
+
+.--dir-col {
+	flex-direction: column;
+}
+
+.-bold {
+  font-weight: 700;
+}
+button {
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+  color: #000;
+}
+html {
+	font-size: 10px;
+}
+
+html,
+body {
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+  overflow-x: hidden;
+	font-size: 3rem;
+  color: #000000;
+  font-family: 'Cormorant';
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+  font-weight: 400;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container  {
+  margin: 0 auto;
+  max-width: 1350px;
+}
+.btn {
+  display: inline-block;
+  background: linear-gradient(81.6deg, #E5D7CC 2.88%, rgba(255, 255, 255, 0) 99.98%), #F5E7CA;
+  box-shadow: 0px 18px 41px rgba(82, 82, 82, 0.17);
+  border-radius: 15px;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+	cursor: pointer;
+  transition: background .5s linear;
+  padding: 1.5rem 4rem;
+  &:hover {
+    background: linear-gradient(81.6deg, #EBB68D 2.88%, rgba(255, 255, 255, 0) 99.98%), #FFD888;
+  }
+  &:active {
+    background: linear-gradient(81.6deg, #E5D7CC 2.88%, rgba(255, 255, 255, 0) 99.98%), #F5E7CA;
+    opacity: 0.6;
+  }
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 73px;
+  color: #000000;
+}
+
+.btn--center {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 300px;
+}
+.title {
+  font-weight: 500;
+  font-size: 6rem;
+}
+.img-zoom {
+  position: relative;
+  height: 100%;
+  width: 520px;
+	cursor: pointer;
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: 100%;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/loupe-icon.svg');
+    height: 92px;
+    width: 92px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden
+  }
+  &:hover::after, &:hover::before {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out
+  }
+}
+
+img {
+	object-fit: cover;
+}
