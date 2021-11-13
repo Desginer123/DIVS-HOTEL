@@ -4,6 +4,7 @@
 @import '../components/**/*.scss';
 
 body {
+  scroll-behavior: smooth;
   position: relative;
 }
 
