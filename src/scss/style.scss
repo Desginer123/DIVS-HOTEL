@@ -236,10 +236,8 @@ body {
 .review {
   overflow-x: hidden;
   padding-top: 120px;
-  background-image: url(../img/review-bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
+  background: url(../img/review-bg-top.png) top right no-repeat, url(../img/review-bg-left.png) center left no-repeat;
+
   padding-bottom: 30px;
   .section-title {
     z-index: 2;
@@ -337,16 +335,16 @@ body {
     height: 36px;
   }
 }
-.intro__booking-input.input-1{
+.intro__booking-input.input-1, .intro__booking-input.input-2{
   position: relative;
   &::before{
     content: '';
     position: absolute;
     background: url(../img/calendar-date.svg) no-repeat;
-    width: 25px;
-    height: 25px;
-    bottom: 4px;
-    right: 4px;
+    width: 22px;
+    height: 22px;
+    bottom: 5px;
+    right: 6px;
     z-index: 1;
   }
   &::after{
@@ -363,7 +361,7 @@ body {
   }
 }
 .intro__booking-input.input-1 input, .intro__booking-input.input-2 input{
-  padding: 7px 0 7px 15px;
+  padding: 7px 0 7px 12px;
   position: relative;
 }
 .intro__booking-input.input-3 input, .intro__booking-input.input-4 input{
@@ -545,13 +543,23 @@ body {
 
 
 .main-wrapper {
-  background-image: url(../img/bwrapper.png);
+  // background-image: url(../img/bwrapper.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .health {
+  position: relative;
+  background-image: url(../img/health-bg.png);
+  background-size: 1700px auto;
+  background-repeat: no-repeat;
   padding-top: 60px;
   margin-bottom: 150px;
+  &::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background-image: url(../img/health-cloud-left.png);
+  }
   &__inner-grid {
     margin-bottom: 60px;
     img {
@@ -756,6 +764,11 @@ z-index: 1;
 }
 .health__grid-bottom-images .first {
   margin-bottom: 15px;
+}
+.plans{
+  background-image: url(../img/plans-bg.png);
+  background-size: 1500px auto;
+  background-repeat: no-repeat;
 }
 .plans, .health {
   overflow-x: hidden;
@@ -1269,7 +1282,11 @@ box-sizing: border-box;
 border-radius: 11px; margin-top: 5px;
 } }
 
+
 .rides {
+  background-image: url(../img/rides-bg.png);
+  background-size: 1800px auto;
+  background-repeat: no-repeat;
   padding-top: 150px;
   &-header {
     width: 100%;
@@ -1388,6 +1405,9 @@ margin-top: 50px;
   left: -105px;
 }
 .gallery {
+  background-image: url(../img/gallery-bg.png);
+  background-size: 1500px auto;
+  background-repeat: no-repeat;
   overflow-x: hidden;
 }
 .gallery__grid {
@@ -1467,6 +1487,14 @@ margin-top: 50px;
     z-index: 3
   }
 }
+
+.news{
+  background-image: url(../img/news-bg.png);
+  background-size: 1450px auto;
+  background-repeat: no-repeat;
+  background-position: 0 500px;
+}
+
 .news__title {
   margin-bottom: 60px;
 }
@@ -1543,20 +1571,6 @@ margin-bottom: 50px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // footer
 .footer{
   background-color: #F7F2DF;
@@ -1567,6 +1581,12 @@ margin-bottom: 50px;
 }
 .footer__logo{
   margin-right: 120px;
+  display: flex;
+  align-items: center;
+  & img {
+    width: 200px;
+    height: 200px;
+  }
 }
 .footer__links{
   display: flex;
