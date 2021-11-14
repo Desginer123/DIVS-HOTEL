@@ -1,6 +1,15 @@
+@media (max-width: 1921px){
+  .container{
+    max-width: 1300px;
+  }
+}
+
 
 
 @media (max-width: 1601px) {
+  .intro{
+    background-image: url('../img/introbg-cut2.jpg');
+  }
   .intro__booking-input input{
     max-width: 135px;
   }
@@ -11,7 +20,7 @@
     margin-right: 25px;
   }
   .container{
-    max-width: 1300px;
+    max-width: 1100px;
   }
   .modal-content .subtitle {
     font-size: 24px;
@@ -167,6 +176,9 @@
   }
 
 }
+
+
+
 @media (max-width: 1450px) {
   .intro{
     background-image: url('../img/introbg-cut2.jpg');
@@ -225,7 +237,6 @@
   }
   .container {
     max-width: 1000px;
-    padding: 0px 20px;
   }
   .box {
     align-items: center;
@@ -331,7 +342,7 @@
     height: 60px;
   }
   .menu {
-    max-width: 30%;
+    max-width: 28%;
   }
   .plans__card img {
     width: 100%;
@@ -390,11 +401,17 @@
   margin-bottom: 30px;
  }
 }
+
+
+
 @media (max-width:1369px) {
     .container {
       max-width: 980px;
     }
 }
+
+
+
 @media (max-width: 1366px) {
   .guest__item--item-title {
     margin-top: 30px;
@@ -445,14 +462,8 @@
 
 }
 
-@media (max-width: 680px) {
-  .left-part img {
-    width: 80%;
-  }
-  .guest__bottom {
-    padding-right: 30px;
-  }
-}
+
+
 @media (max-width:1180px) {
   .container {
     max-width: 920px;
@@ -641,39 +652,73 @@
     width: 150px;
     height: auto;
   }
+  .guest__item--item-content .left-part {
+    left: -115px!important;
+  }
+  .guest__item--item-content > .left-part > .btn {
+    max-width: 440px!important;
+    left: 113px!important;
+    position: relative!important;
+    top: 20px!important;
+  }
+  .guest-slider .swiper-button-next {
+      top: 80% !important;
+      right: 10%!important;
+  }
+}
+
+
+
+@media (max-width: 1155px) {
+  .left-part .swiper-button-next {
+    right: -28%!important;
+  }
 }
 
 
 
-
-@media (max-width: 484px) {
-  .intro__booking-right {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+@media (max-width: 1081px) {
+  .left-part .swiper-button-next {
+    top: 90%;
+    right: 21%;
   }
-  .intro__booking-textarea_link {
-    margin-bottom: 10px;
+  .left-part .swiper-button-prev {
+    top: 90%;
   }
-  .intro__booking-right-tooltype {
-    margin-top: 20px;
-  }
-  .intro__booking-right-input {
-    margin-top: 10px;
+  .guest__item--item-content {
+    overflow: hidden;
   }
 }
 
-@media (max-width: 392px) {
-  .intro__booking-title {
-    max-width: 210px;
+
+
+@media (max-width: 1024px) {
+  .deal-content .swiper-container .swiper-button-prev {
+    left: 25%;
+    top: 70%;
   }
-.intro__booking-input {
-  font-size: 2rem;
-  margin-right: 5px;
-  font-weight: 400;
-  line-height: 28px;
+  .deal-content .swiper-container .swiper-button-next {
+    top: 70%;
+    right: 25%
+  }
+  .modal-content .subtitle {
+    font-size: 14px;
+  }
+  .modal-subinfo, .modal-content .checkbox {
+    font-size: 16px;
+  }
+  .modal-content {
+    padding-bottom: 30px;
+  }
+  .gallery {
+    padding-bottom: 0;
+    & .btn {
+      display: none;
+    }
+  }
 }
-}
+
+
 
 @media (max-width:996px) {
   header {
@@ -908,6 +953,75 @@
     background-position: right;
   }
 }
+
+
+
+@media (max-width: 992px) {
+  .menu__list {
+    padding-left: 0;
+  }
+}
+
+
+@media (max-width: 780px) {
+  .guest__item--item-content .left-part {
+    left: 0 !important;
+  }
+  .guest-slider .swiper-button-prev {
+      left: 3% !important;
+  }
+  .guest-slider .swiper-button-next {
+      right: 3% !important;
+  }
+  .guest__item--item-content > .left-part > .btn {
+    left: 0 !important;
+  }
+  }
+
+
+
+@media (max-width: 680px) {
+  .left-part img {
+    width: 80%;
+  }
+  .guest__bottom {
+    padding-right: 30px;
+  }
+}
+
+
+
+
+
+@media (max-width: 484px) {
+  .intro__booking-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .intro__booking-textarea_link {
+    margin-bottom: 10px;
+  }
+  .intro__booking-right-tooltype {
+    margin-top: 20px;
+  }
+  .intro__booking-right-input {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 392px) {
+  .intro__booking-title {
+    max-width: 210px;
+  }
+.intro__booking-input {
+  font-size: 2rem;
+  margin-right: 5px;
+  font-weight: 400;
+  line-height: 28px;
+}
+}
+
 
 
 @media (max-width:772px) {
@@ -1343,40 +1457,6 @@
 
 
 
-
-.modal-subinfo {
-  text-align: center;
-  color: #646464;
-  font-size: 24px;
-}
-
-@media (max-width: 1024px) {
-  .deal-content .swiper-container .swiper-button-prev {
-    left: 25%;
-    top: 70%;
-  }
-  .deal-content .swiper-container .swiper-button-next {
-    top: 70%;
-    right: 25%
-  }
-  .modal-content .subtitle {
-    font-size: 14px;
-  }
-  .modal-subinfo, .modal-content .checkbox {
-    font-size: 16px;
-  }
-  .modal-content {
-    padding-bottom: 30px;
-  }
-  .gallery {
-    padding-bottom: 0;
-    & .btn {
-      display: none;
-    }
-  }
-}
-
-
 @media (max-width: 767px) {
   .modal-content .subtitle {
     font-size: 10px;
@@ -1392,11 +1472,6 @@
   }
 }
 
-@media (max-width: 992px) {
-  .menu__list {
-    padding-left: 0;
-  }
-}
 
 
 @media (max-width: 780px) {
@@ -1429,11 +1504,6 @@
 }
 
 
-@media (max-width: 1155px) {
-  .left-part .swiper-button-next {
-    right: -28%!important;
-  }
-}
 
 @media (min-width: 1160px) {
   .modal-content {
@@ -1441,6 +1511,17 @@
   }
 }
 
+
+@media (min-width: 1024px) {
+  .footer__logo {
+    & img {
+      width: 165px;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
 
 
 
@@ -1485,41 +1566,12 @@
 .guest__item--item-title {
   margin-top: 50px;
 }
- }
-
-@media (max-width: 1180px) {
-  .guest__item--item-content .left-part {
-    left: -115px!important;
-  }
-  .guest__item--item-content > .left-part > .btn {
-    max-width: 440px!important;
-    left: 113px!important;
-    position: relative!important;
-    top: 20px!important;
-  }
-  .guest-slider .swiper-button-next {
-      top: 80% !important;
-      right: 10%!important;
-  }
 }
+
+
 
 @media screen and (max-width: 995px) {
     .guest-slider .swiper-button-next {
       right: 14%!important;
     }
-}
-
-@media (max-width: 780px) {
-.guest__item--item-content .left-part {
-  left: 0 !important;
-}
-.guest-slider .swiper-button-prev {
-    left: 3% !important;
-}
-.guest-slider .swiper-button-next {
-    right: 3% !important;
-}
-.guest__item--item-content > .left-part > .btn {
-  left: 0 !important;
-}
 }
