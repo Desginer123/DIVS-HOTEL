@@ -1352,12 +1352,12 @@
 
 @media (max-width: 1024px) {
   .deal-content .swiper-container .swiper-button-prev {
-    left: 25%;
+    left: 28%;
     top: 70%;
   }
   .deal-content .swiper-container .swiper-button-next {
     top: 70%;
-    right: 25%
+    right: 28%
   }
   .modal-content .subtitle {
     font-size: 14px;
@@ -1522,4 +1522,28 @@
 .guest__item--item-content > .left-part > .btn {
   left: 0 !important;
 }
+}
+
+@media (max-width: 565px) {
+  .deal-content .swiper-container .swiper-button-prev {
+    left: 14%;
+    top: 70%;
+}
+.deal-content .swiper-container .swiper-button-next {
+    top: 70%;
+    right: 18%;
+}
+}
+
+@media (max-width: 435px) {
+  .deal-content .swiper-slide-inner button {
+    padding: 10px 20px
+  }
+
+}
+
+@media (max-width: 380px) {
+  .deal-content .swiper-slide-inner button {
+    padding: 5px 10px;
+  }
 }

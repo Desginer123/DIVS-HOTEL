@@ -224,19 +224,25 @@ let swiper = new Swiper(".deals-container", {
   breakpoints: {
     1024: {
       slidesPerView: 5,
+      coverflowEffect: {
+        rotate: 0,
+        depth: 300,
+        modifier: 1,
+      },
     },
     772: {
       slidesPerView: 2,
     },
-    500: {
+    320: {
       slidesPerView: 1,
     },
   },
   coverflowEffect: {
     rotate: 0,
-    depth: 300,
-    modifier: 1,
-  }
+    depth: 000,
+    modifier: 0,
+  },
+
  });
 
  let modalTrigger2 = document.querySelectorAll('[data-modal2]'),
