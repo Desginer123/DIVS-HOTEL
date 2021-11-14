@@ -31,7 +31,7 @@
     font-size: 24px;
   }
   #booking-form {
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .inputs-item:nth-child(5) {
     width: 100%;
@@ -60,7 +60,7 @@
     font-size: 24px;
   }
   #booking-form {
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .modal2 .inputs-item:nth-child(5) {
     width: 100%;
@@ -98,6 +98,29 @@
   .dinner {
     overflow-x: hidden;
   }
+  .dinner-subinfo__text::before {
+    position: absolute;
+    content: '';
+    background: rgba(255,255,255,.5);
+    width: 778px;
+    height: 280px;
+    top: -49px;
+    left: -70px;
+  }
+  .dinner-overlay {
+    align-items: center;
+  }
+  .dinner-subinfo__img-wrapper .dinner-subinfo__img-text {
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .dinner-subinfo__img-wrapper .dinner-subinfo__img-text .box {
+    width: 60%;
+  }
+  .dinner__center-item .dinner__item-text {
+    padding: 90px 50px 50px 0;
+}
   .menu__inner {
     padding: 20px 30px 50px;
   }
@@ -196,6 +219,7 @@
     margin-right: 40px;
     padding-bottom: 10px;
   }
+
   .intro__booking-right-btn{
     padding: 0;
   }
@@ -235,9 +259,11 @@
   }
   .dinner__center-item.rightside .dinner__item-img,
   .dinner__center-item .dinner__item-img {
-    width: 550px;
     height: auto;
   }
+  .dinner__center-item .dinner__item-text {
+    padding: 60px 50px 50px 0;
+}
   .news__appeal .quotes {
     font-size: 200px;
     top: -161px;
@@ -335,6 +361,12 @@
     margin-top: 180px;
     width: 100%;
   }
+  .dinner-subinfo__text::before {
+    height: 265px;
+  }
+  .dinner-item:not(:last-child) {
+    margin-right: 40px;
+}
   .intro__text span {
     font-size: 120px;
   }
@@ -351,6 +383,16 @@
   .swiper-button-prev:after,.swiper-button-next:after {
     font-size: 25px !important;
   }
+  .deal-content .slide-inner-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.deal-content .swiper-slide-inner button {
+  padding: 10px 20px;
+}
   .instagram-link img {
     width: 40px;
     height: 40px;
@@ -411,6 +453,9 @@
     img {
       width: 100%;
     }
+  }
+  .box img {
+    width: 40px !important;
   }
   .gallery__grid {
     grid-template-columns: repeat(12, 60px);
@@ -511,6 +556,12 @@
   .health__grid-bottom {
     margin-top: 30px;
   }
+  .dinner-subinfo__img-wrapper {
+    margin-top: 50px;
+  }
+  .dinner-subinfo__img-wrapper .dinner-subinfo__img-text {
+    transform: translate(-50%, -50%);
+  }
   .container {
     max-width: 920px;
     padding: 0 20px;
@@ -598,6 +649,12 @@
       height: 60px;
       width: 60px;
     }
+  }
+  .deal-content .swiper-container .swiper-button-prev {
+    left: 40%;
+  }
+  .deal-content .swiper-container .swiper-button-next {
+    right: 40%;
   }
   .gallery__title p {
     padding-bottom: 200px;
@@ -739,6 +796,17 @@
       display: none;
     }
   }
+  .rides .title {
+    text-align: center;
+    width: 100%;
+    float: none;
+  }
+  .rides-header {
+    margin-bottom: 40px;
+  }
+  .rides__item:not(:last-child) {
+    margin-bottom: 40px;
+}
   .lightbox-image {
     object-fit: cover;
   }
@@ -897,6 +965,12 @@
       margin-bottom: 20px;
     }
   }
+  .dinner-content .dinner-header__item:not(:first-child) {
+    margin-left: 0%;
+  }
+  .dinner-subinfo__img-wrapper .dinner-subinfo__img-text .box {
+    width: 30%;
+}
   .review {
     padding-bottom: 50px;
   }
@@ -967,6 +1041,9 @@
     display: inline-block;
     margin: 0 auto;
   }
+  .plans__inner-bottom {
+    margin-top: 40px;
+  }
 
   .footer__wrapper {
     flex-direction: column;
@@ -1017,6 +1094,9 @@
   .review-content-text {
     margin-bottom: 60px;
   }
+  .dinner-subinfo__img-wrapper .dinner-subinfo__img-text .box {
+    width: 60%;
+}
   .revivew-content__subinfo-service--content img {
     width: 340px;
   }
@@ -1160,6 +1240,9 @@
   .rides__item {
     padding: 15px 30px;
   }
+  .rides__item:not(:last-child) {
+    margin-bottom: 40px;
+  }
   .inputs-wrapper {
     min-width: 100%;
   }
@@ -1199,6 +1282,12 @@
   .humber {
     width: 100%;
   }
+  .deal-content .swiper-container .swiper-button-prev {
+    top: 71px;
+  }
+  .deal-content .swiper-container .swiper-button-next {
+    top: 71px;
+  }
 }
 
 
@@ -1206,6 +1295,9 @@
   .review-content__subinfo .review-content__subinfo-wrapper {
     width: 100%;
   }
+  .dinner-subinfo__img-wrapper {
+    width: 100%;
+}
   .review-content__subinfo-img {
     display: none;
   }
@@ -1220,6 +1312,25 @@
 }
 
 @media (max-width:556px) {
+  .plans__inner-text {
+    padding-left: 20px;
+  }
+  .dinner-subinfo__img-wrapper .dinner-subinfo__img-text .box {
+    width: 60%;
+}
+.dinner-subinfo__img-text {
+  width: 70%;
+}
+.dinner-subinfo__img-wrapper .dinner-subinfo__img-text {
+  padding: 0;
+}
+.dinner-subinfo__img-wrapper .dinner-call {
+    width: 100%;
+    height: 130px;
+}
+  .plans__card-name {
+    font-size: 18px;
+  }
   .rides__item {
     flex-direction: column;
   }
@@ -1301,6 +1412,12 @@
   .plans__inner-text {
     padding-bottom: 20px;
   }
+  .plans__inner-cards .plans__card .plans__card-name {
+    margin-bottom: 10px;
+  }
+  .plans__inner-cards .plans__card img {
+    margin-bottom: 10px;
+}
   .header__rightside .btn {
     display: none;
   }
@@ -1397,16 +1514,15 @@
   .news__appeal {
     padding: 10px 10px;
   }
-  .deal-content .swiper-container .swiper-button-prev {
-    left: 17%;
-    top: 70%;
-  }
-  .deal-content .swiper-container .swiper-button-next {
-    top: 70%;
-    right: 17%
-  }
+.deal-content .swiper-slide-inner button {
+  font-size: 14px;
+}
   .deal-content .slide-inner-title {
-    font-size: 16px
+    font-size: 16px;
+    margin-bottom: 45px;
+  }
+  .deal {
+    padding-bottom: 40px;
   }
   .rides__items-wrapper {
     padding: 0px 0px 0px 0px;
@@ -1543,6 +1659,8 @@
   .menu__list {
     padding-left: 0;
   }
+
+
 }
 
 
@@ -1673,12 +1791,15 @@
 
 @media (max-width: 565px) {
   .deal-content .swiper-container .swiper-button-prev {
-    left: 14%;
-    top: 70%;
+    left: 23.5%;
+    top: 75%;
 }
 .deal-content .swiper-container .swiper-button-next {
-    top: 70%;
-    right: 18%;
+    top: 75%;
+    right: 23.5%;
+}
+.deal-content .swiper-slide-inner {
+  margin-bottom: 0;
 }
 }
 
