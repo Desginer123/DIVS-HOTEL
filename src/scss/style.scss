@@ -238,7 +238,7 @@ body {
   padding-top: 120px;
   background-image: url(../img/review-bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: top;
   padding-bottom: 30px;
   .section-title {
@@ -464,6 +464,7 @@ body {
   & &-wrapper {
     padding: 28px 67px 40px 73px;
     width: 68%;
+    margin-right: 10px;
     background-color: rgba(255,255,255, 0.5);
   }
   &-text {
@@ -556,6 +557,7 @@ body {
     img {
       z-index: 3;
       position: relative;
+      border-radius: 6px;
     }
     img:nth-child(1) {
       width: 100px;
@@ -569,6 +571,40 @@ body {
     // img:nth-child(4)
   }
 }
+
+.health__grid-bottom-images .humber {
+  position: relative;
+  width: 100%;
+}
+
+
+.number-box {
+  padding: 0 30px
+}
+.health .phone {
+  position: absolute;
+top: 47%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+transform: translate(-50%, -50%);
+z-index: 5;
+width: 80%;
+height: 80%;
+left: 50%;
+& span {
+  font-size: 50px;
+  font-family: initial;
+}
+& box {
+  margin-top: 10px;
+}
+}
+
+.health .box img {
+  width: 20%;
+  height: 70%;
+}
+
 .health__grid-top-left img {
   width: 628px;
   height: 481px;
@@ -579,11 +615,9 @@ body {
 height: 639px;
   }
 }
-.health__grid-center {
-  img  {
-    width: 630px;
-height: 321px;
-  }
+
+.health__grid-center picture {
+  width: 48%;
 }
 .health__grid-bottom>img {
   width: 630px;
@@ -639,7 +673,7 @@ left: -70%;
 .health__grid-top-right,
 .health__grid-bottom-right,
 .health__grid-bottom>img {
-  width: 47%;
+  width: 48%;
 }
 .top__left-text {
   padding: 60px 20px 60px 0px;
@@ -651,12 +685,55 @@ left: -70%;
   font-size: 36px;
   margin-bottom: 20px;
 }
+
+.health__grid-bottom--img {
+  width: 48%;
+  & img {
+    width: 100%!important;
+  }
+}
+.health__grid-top-left {
+  width: 48%!important;
+}
+.health__grid-top-left img {
+  width: 100%!important;
+}
+.phone-title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+
+.health__grid-center {
+  picture:not(:fist-child) {
+    width: 47%;
+  };
+  img  {
+    width: 100%;
+height: 321px;
+  }
+}
+
+.health .phone {
+  color: #fff;
+  line-height: 140%;
+  background-color: rgba(0,0,0, 0.3);
+  border-radius: 16px;
+  & span {
+    font-size: 60px;
+    margin-left: 33px;
+    color: #fff;
+
+  }
+}
+
 .health__grid-bottom>img {
   width: 630px;
 height: 750px;
 }
-.health__grid-top,
-.health__grid-center  {
+.health__grid-top, {
   margin-bottom: 30px;
 }
 .health__grid-bottom-text {
@@ -678,7 +755,7 @@ z-index: 1;
   }
 }
 .health__grid-bottom-images .first {
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 .plans, .health {
   overflow-x: hidden;
@@ -2376,6 +2453,8 @@ border-radius: 6px;
   font-size: 24px;
 }
 
-
+.first, .humber .second {
+  width: 100% !important;
+}
 
 @import '**/_media.scss';

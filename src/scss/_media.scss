@@ -379,7 +379,16 @@
   }
   .health__grid-center img {
     height: 244px;
-    width: 450px;
+    width: 100%;
+  }
+  .health__grid-center {
+    picture:not(:fist-child) {
+      width: 47%;
+    };
+    img  {
+      width: 100%;
+  height: 321px;
+    }
   }
   .top__right-images img {
     width: 215px;
@@ -499,6 +508,9 @@
   }
 }
 @media (max-width:1180px) {
+  .health__grid-bottom {
+    margin-top: 30px;
+  }
   .container {
     max-width: 920px;
     padding: 0 20px;
@@ -552,9 +564,6 @@
     width: 430px;
     height: 520px;
     object-fit: cover;
-  }
-  .health__grid-center img, .health__grid-top-left img, .health__inner-grid img {
-    width: 413px;
   }
   .health__grid-bottom-text {
     padding-top: 0;
@@ -641,7 +650,7 @@
     padding-bottom: 30px;
   }
   .top__right-images img {
-    width: 185px;
+    width: 195px;
   }
   .review-content__subinfo img {
     width: 360px;
@@ -724,6 +733,7 @@
 }
 
 @media (max-width:996px) {
+
   header {
     .btn, .header__rightside-icons {
       display: none;
@@ -803,7 +813,7 @@
   .health__title {
     margin-bottom: 10px;
   }
-  .top__left-text, .top__right-text {
+  .top__right-text {
     padding-top: 0;
   }
   .health__grid-top {
@@ -826,15 +836,25 @@
 
     };
   }
-  .top__right-text {
-    padding-top: 0;
-  }
 
   .top__right-images img {
-    width: 95%;
+    width: 90%;
   }
   .health__grid-center picture:not(:last-child) {
     margin-right: 40px;
+  }
+  .health__grid-bottom--img {
+    width: 48%;
+    margin-right: 0px;
+    height: 100%;
+    overflow: hidden;
+    & img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .health__grid-top-left img {
+    width: 100%;
   }
 
   .plans__inner-text {
@@ -1168,6 +1188,16 @@
   }
   .health__grid-top-left .top__left-text {
     padding: 10px;
+    width: 100%;
+  }
+  .health__grid-top-left {
+    width: 100% !important;
+  }
+  .health__grid-center picture {
+    width: 100%;
+  }
+  .humber {
+    width: 100%;
   }
 }
 
@@ -1662,5 +1692,12 @@
 @media (max-width: 380px) {
   .deal-content .swiper-slide-inner button {
     padding: 5px 10px;
+  }
+}
+
+
+@media (min-width: 1451px) {
+  .health__grid-center {
+    margin-bottom: 40px;
   }
 }
