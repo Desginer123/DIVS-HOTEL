@@ -341,21 +341,22 @@
     height: auto;
   }
   .health__grid-top-left img {
-    width: 532px;
+    width: 480px;
     height: auto;
   }
   .health__inner-grid img {
-    width: 532px;
+    width: 480px;
     height: auto;
   }
   .health__grid-center img {
-    width: 532px;
-    height: auto;
+    height: 244px;
+    width: 450px;
   }
   .top__right-images img {
-    width: 243px;
-    height: auto;
-  }
+    width: 215px;
+    height: 512px;
+    object-fit: cover;
+}
   .dinner-items {
     justify-content: center;
   }
@@ -767,6 +768,43 @@
   .health__grid-center img, .health__grid-top-left img, .health__inner-grid img {
     width: 336px;
   }
+  .health__title {
+    margin-bottom: 10px;
+  }
+  .top__left-text, .top__right-text {
+    padding-top: 0;
+  }
+  .health__grid-top {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+  .top__right-images img {
+    width: 220px;
+  }
+  .health__grid-center {
+    img {
+      width: 100%;
+
+    }
+    img:not(:last-child) {
+      margin-right: 40px;
+
+    };
+  }
+  .top__right-text {
+    padding-top: 0;
+  }
+
+  .top__right-images img {
+    width: 95%;
+  }
+  .health__grid-center picture:not(:last-child) {
+    margin-right: 40px;
+  }
+
   .plans__inner-text {
     padding-right: 0;
     transform: translate(0px,-120px);
@@ -877,9 +915,7 @@
     display: inline-block;
     margin: 0 auto;
   }
-  .top__right-images img {
-    width: 162px;
-  }
+
   .footer__wrapper {
     flex-direction: column;
     align-items: center;
@@ -949,6 +985,12 @@
   }
   .review-content--img-wrapper {
     flex-direction: row;
+  }
+  .health__grid-center picture:not(:last-child) {
+    margin-right: 0;
+  }
+  .health__grid-bottom-paragraph {
+    padding-right: 40px;
   }
   #booking-form {
     overflow-y: scroll;
