@@ -558,8 +558,21 @@ body {
   &::after{
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     background-image: url(../img/health-cloud-left.png);
+    z-index: 2;
+    height: 800px;
+    width: 600px;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    background-image: url(../img/health-right-figure.png);
+    z-index: 2;
+    height: 500px;
+    width: 600px;
+    right: 0;
   }
   &__inner-grid {
     margin-bottom: 60px;
@@ -921,6 +934,30 @@ margin-bottom: 50px;
 }
 .dinner {
   margin-top: 150px;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    background-image: url(../img/dinner-right-figure.png);
+    z-index: 0;
+    height: 500px;
+    width: 400px;
+    right: 0;
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background-image: url(../img/dinner-bottom-figure.png);
+    z-index: -1;
+    height: 900px;
+    width: 70%;
+    right: 0;
+  }
+  & .title {
+    margin-bottom: 10px;
+  }
   &-content {
     position: relative;
     & .dinner-header {
@@ -1009,6 +1046,17 @@ height: 420px;
 .dinner-subinfo {
   margin-top: 40px;
   position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -120px;
+    background-image: url(../img/dinner-left-figure.png);
+    z-index: -1;
+    height: 500px;
+    width: 400px;
+    left: -200px;
+    background-size: cover;
+  }
   &__text {
     width: 50%;
     position: relative;
@@ -1077,6 +1125,18 @@ left: -70px;
 .deal {
   padding-bottom: 138px;
   overflow-x: hidden;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    background-image: url(../img/deal-top-figure.png);
+    z-index: -1;
+    height: 500px;
+    width: 400px;
+    right: 0;
+    background-size: cover;
+  }
   &-content {
     margin-bottom: 60px;
     margin-top: 50px;
@@ -1428,7 +1488,24 @@ margin-top: 50px;
   background-image: url(../img/gallery-bg.png);
   background-size: 1500px auto;
   background-repeat: no-repeat;
-  overflow-x: hidden;
+  overflow-x: visible;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -190px;
+    background-image: url(../img/gallery-left-figure.png);
+    z-index: 0;
+    height: 630px;
+    width: 400px;
+    left: 0;
+    background-size: cover;
+  }
+}
+.deal {
+  overflow: visible;
+  overflow-x: visible
+
 }
 .gallery__grid {
   display: grid !important;

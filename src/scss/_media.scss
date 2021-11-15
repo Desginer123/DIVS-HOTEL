@@ -1291,8 +1291,11 @@
   .foreseeing__inner img {
     width: 200px;
   }
+  .review-content--img-wrapper {
+    width: 100%;
+  }
   .review-content--img-wrapper img:first-child, .review-content--img-wrapper img:nth-child(2), .review-content--left-part img {
-    width: 45%;
+    width: 46%;
   }
   .plans__inner-top .plans__top-text::before {
     width: 1000px;
@@ -1398,6 +1401,24 @@
 }
 
 @media (max-width:556px) {
+  .health .phone {
+    display: flex!important;
+    justify-content: center;
+  }
+  .health .box img {
+    width: 30% !important;
+    height: 70%;
+}
+.health .box {
+  width: 90%;
+  & span {
+    font-size: 40px;
+  }
+}
+.phone-title {
+  justify-content: center;
+  align-items: center;
+}
   .plans__inner-text {
     padding-left: 20px;
   }

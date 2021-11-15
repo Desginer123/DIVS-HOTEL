@@ -355,7 +355,7 @@ let guestSlider = new Swiper(".guest-slider", {
     },
   centeredSlides: true,
   slidesPerView: 1,
-  initialSlide: 0,
+  initialSlide: 1,
   breakpoints: {
     780: {
       slidesPerView: 3,
@@ -424,7 +424,7 @@ let guestSlider = new Swiper(".guest-slider", {
       },
     centeredSlides: true,
     slidesPerView: 1,
-    initialSlide: 0,
+    initialSlide: 1,
     breakpoints: {
       780: {
         slidesPerView: 3,
@@ -458,7 +458,7 @@ let guestSlider = new Swiper(".guest-slider", {
        },
      centeredSlides: true,
      slidesPerView: 1,
-     initialSlide: 0,
+     initialSlide: 1,
      breakpoints: {
        780: {
          slidesPerView: 3,
@@ -492,7 +492,7 @@ let guestSlider = new Swiper(".guest-slider", {
         },
       centeredSlides: true,
       slidesPerView: 1,
-      initialSlide: 0,
+      initialSlide: 1,
       breakpoints: {
         780: {
           slidesPerView: 3,
