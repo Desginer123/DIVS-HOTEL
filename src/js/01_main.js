@@ -360,6 +360,7 @@ let guestSlider = new Swiper(".guest-slider", {
     780: {
       slidesPerView: 3,
       initialSlide: 1,
+      spaceBetween: 0,
       coverflowEffect: {
         rotate: 0,
         depth: 300,

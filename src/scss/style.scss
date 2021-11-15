@@ -258,7 +258,7 @@ body {
       &::before {
         content: '';
         position: absolute;
-        width: 891px;
+        width: 791px;
         height: 850px;
         background: rgba(#fff, 0.5);
         top: -90px;
@@ -453,10 +453,11 @@ body {
   width: 95%;
   & img {
     width: 410px;
-    height: 411px;
+    height: 390px;
     position: absolute;
     right: 0;
     bottom: -35px;
+    border-radius: 6px;
     z-index: 3;
   }
   & &-wrapper {
@@ -609,7 +610,7 @@ left: 50%;
 }
 
 .health .box img {
-  width: 20%;
+  width: 20%!important;
   height: 70%;
 }
 
@@ -1383,7 +1384,7 @@ margin-top: 50px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 50%;
+  width: 70%;
   margin-left: 60px;
   &--text {
     text-align: center;
@@ -1820,7 +1821,7 @@ border-radius: 6px;
 }
 
 
-.guest__items--item {
+  .guest__items--item {
   background-color: rgba(255, 255, 255, 0.5);
   width: 105%;
   position: relative;
