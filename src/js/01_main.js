@@ -381,24 +381,6 @@ let guestSlider = new Swiper(".guest-slider", {
   // loop: true
  });
  let guestSlider2 = new Swiper(".guest-slider2", {
-  effect: 'coverflow',
-  grabCursor: true,
-  navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  centeredSlides: true,
-  slidesPerView: 3,
-  initialSlide: 1,
-  slideToClickedSlide: true,
-  coverflowEffect: {
-    rotate: 0,
-    depth: 300,
-    modifier: 1,
-  },
-  // loop: true
- });
- let guestSlider3 = new Swiper(".guest-slider3", {
    effect: 'coverflow',
    grabCursor: true,
    navigation: {
@@ -406,52 +388,134 @@ let guestSlider = new Swiper(".guest-slider", {
        prevEl: ".swiper-button-prev",
      },
    centeredSlides: true,
-   slidesPerView: 3,
-   initialSlide: 1,
-   slideToClickedSlide: true,
+   slidesPerView: 1,
+   initialSlide: 0,
+   breakpoints: {
+     780: {
+       slidesPerView: 3,
+       initialSlide: 1,
+       coverflowEffect: {
+         rotate: 0,
+         depth: 300,
+         modifier: 1,
+       },
+       navigation: {
+           nextEl: ".swiper-button-next",
+           prevEl: ".swiper-button-prev",
+         },
+     },
+   },
    coverflowEffect: {
      rotate: 0,
-     depth: 300,
-     modifier: 1,
+     depth: 00,
+     modifier: 0,
    },
+   slideToClickedSlide: true,
+
    // loop: true
+  });
+  let guestSlider3 = new Swiper(".guest-slider3", {
+    effect: 'coverflow',
+    grabCursor: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    centeredSlides: true,
+    slidesPerView: 1,
+    initialSlide: 0,
+    breakpoints: {
+      780: {
+        slidesPerView: 3,
+        initialSlide: 1,
+        coverflowEffect: {
+          rotate: 0,
+          depth: 300,
+          modifier: 1,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+      },
+    },
+    coverflowEffect: {
+      rotate: 0,
+      depth: 00,
+      modifier: 0,
+    },
+    slideToClickedSlide: true,
+
+    // loop: true
    });
- let guestSlider4 = new Swiper(".guest-slider4", {
-  effect: 'coverflow',
-  grabCursor: true,
-  navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  centeredSlides: true,
-  slidesPerView: 3,
-  initialSlide: 1,
-  slideToClickedSlide: true,
-  coverflowEffect: {
-    rotate: 0,
-    depth: 300,
-    modifier: 1,
-  },
-  // loop: true
- });
- let guestSlider5 = new Swiper(".guest-slider5", {
-  effect: 'coverflow',
-  grabCursor: true,
-  navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  centeredSlides: true,
-  slidesPerView: 3,
-  initialSlide: 1,
-  slideToClickedSlide: true,
-  coverflowEffect: {
-    rotate: 0,
-    depth: 300,
-    modifier: 1,
-  },
-  // loop: true
- });
+   let guestSlider4 = new Swiper(".guest-slider4", {
+     effect: 'coverflow',
+     grabCursor: true,
+     navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+       },
+     centeredSlides: true,
+     slidesPerView: 1,
+     initialSlide: 0,
+     breakpoints: {
+       780: {
+         slidesPerView: 3,
+         initialSlide: 1,
+         coverflowEffect: {
+           rotate: 0,
+           depth: 300,
+           modifier: 1,
+         },
+         navigation: {
+             nextEl: ".swiper-button-next",
+             prevEl: ".swiper-button-prev",
+           },
+       },
+     },
+     coverflowEffect: {
+       rotate: 0,
+       depth: 00,
+       modifier: 0,
+     },
+     slideToClickedSlide: true,
+
+     // loop: true
+    });
+    let guestSlider5 = new Swiper(".guest-slider5", {
+      effect: 'coverflow',
+      grabCursor: true,
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      centeredSlides: true,
+      slidesPerView: 1,
+      initialSlide: 0,
+      breakpoints: {
+        780: {
+          slidesPerView: 3,
+          initialSlide: 1,
+          coverflowEffect: {
+            rotate: 0,
+            depth: 300,
+            modifier: 1,
+          },
+          navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+        },
+      },
+      coverflowEffect: {
+        rotate: 0,
+        depth: 00,
+        modifier: 0,
+      },
+      slideToClickedSlide: true,
+
+      // loop: true
+     });
  const lightboxContainer = document.querySelector('.lightbox-container');
 
  if (lightboxContainer != null) {
