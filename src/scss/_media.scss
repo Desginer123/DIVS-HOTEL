@@ -1640,6 +1640,9 @@
   .review-content--img-wrapper img:first-child, .review-content--img-wrapper img:nth-child(2), .review-content--left-part img {
     height: 110px;
   }
+  .inputs-item-1 input, .inputs-item-2 input, .inputs-item-3 input, .inputs-item-4 input {
+    min-height: 30px;
+  }
 }
 
 
@@ -1876,7 +1879,19 @@
   .deal-content .swiper-slide-inner button {
     padding: 10px 20px
   }
-
+  .map__info-title{
+    font-size: 20px;
+    & span{
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .map__info-address, .map__info-contacts a {
+    font-size: 1.7rem;
+  }
+  .map__info-wrapper{
+    padding: 15px 45px 23px;
+  }
 }
 
 @media (max-width: 380px) {
