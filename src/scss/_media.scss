@@ -740,17 +740,17 @@
     position: relative;
     padding-bottom: 100px;
     .swiper-button-prev {
-      top: 80%;
+      top: 35%;
     }
     .swiper-button-next {
-      top: 80%;
+      top: 35%;
     }
     .swiper-button-next, .swiper-button-prev {
       color: #E5D7CC;
       border-radius: 50%;
       background-color: rgba($color: #000000, $alpha: 0.4);
-      height: 60px;
-      width: 60px;
+      height: 44px;
+      width: 44px;
     }
   }
   .deal-content .swiper-container .swiper-button-prev {
@@ -900,6 +900,12 @@
   header {
     .btn, .header__rightside-icons {
       display: none;
+    }
+    .mobile__btn {
+      font-size: 16px!important;
+      display: block!important;
+      margin-right: 15px!important;
+      padding: 1.5rem 2rem!important;
     }
   }
   .rides .title {
@@ -1147,6 +1153,9 @@
     display: inline-block;
     margin: 0 auto;
   }
+  .health::before {
+    display: none;
+}
   .plans__inner-bottom {
     margin-top: 40px;
   }

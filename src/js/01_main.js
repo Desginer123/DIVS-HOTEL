@@ -22,7 +22,6 @@ closeBtn.addEventListener('click', function() {
 });
 
 let headerBtn = document.querySelector('.header__btn'),
-     headerBtn2 = document.querySelector('.header__btn2'),
     booking = document.querySelector('.intro__booking'),
     closeBooking = document.getElementById('close-booking'),
     tooltipLink = document.querySelector('.tooltype__link'),
@@ -41,9 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
   headerBtn.addEventListener('click', (e) => {
     booking.classList.remove('dn');
   });
-  headerBtn2.addEventListener('click', (e) => {
-    booking.classList.remove('dn');
-  });
   tooltipLink.addEventListener('click', () => {
     tooltipBody.classList.toggle('dn')
   });
@@ -57,9 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
     texareaClose.classList.remove('hide')
   }),
   headerBtn.addEventListener("click", (e) => {
-  booking.classList.remove("hidden");
-  });
-  headerBtn2.addEventListener("click", (e) => {
   booking.classList.remove("hidden");
   });
   closeBooking.addEventListener("click", () => {
@@ -183,14 +176,26 @@ if (window.innerWidth < 1180) {
   if (gallery__grid != null) {
     gallery__grid.classList.remove('gallery__grid')
   }
-  let gallerySwiper = new Swiper(".gallery-slider", {
+  let linksCollection = document.querySelectorAll('.grid__image img');
+  linksCollection.forEach((item, i) => {
+    console.log(item)
+    let dataSrc = item.getAttribute('data-imagesrc');
+    let src = item.getAttribute('src')
+    item.setAttribute('src', dataSrc)
+  });
 
+  let gallerySwiper = new Swiper(".gallery-slider", {
     centeredSlides: true,
-    slidesPerView: 3,
     breakpoints: {
       772: {
-        slidesPerView: 2,
+        slidesPerView: 4,
+        initialSlide: 1,
 
+        spaceBetween: 30,
+      },
+      500: {
+        slidesPerView: 2,
+        initialSlide: 1,
         spaceBetween: 30,
       },
       320: {
@@ -561,10 +566,6 @@ let guestSlider = new Swiper(".guest-slider", {
    const transitionSlideHandler = (moveItem) => {
      moveItem.includes('left') ? transitionSlideLeft() : transitionSlideRight();
    }
-
-
-
-
 
    lightboxBtns.forEach((btn) => {
      btn.addEventListener('click', (e) => {
