@@ -96,7 +96,7 @@
     padding-right: 0;
   }
   .review-content-text {
-    margin-bottom: 140px;
+    margin-bottom: 180px;
   }
   .dinner-subinfo__text p {
     padding-left: 10px;
@@ -120,9 +120,6 @@
     align-items: center;
     left: 50%;
     transform: translate(-50%,-50%);
-  }
-  .dinner-subinfo__img-wrapper .dinner-subinfo__img-text .box {
-    width: 60%;
   }
   .dinner__center-item .dinner__item-text {
     padding: 90px 50px 50px 0;
@@ -520,8 +517,8 @@
    width: 300px;
  }
  .review-content-text {
-   font-size: 20px;
-    margin-bottom: 60px;
+   font-size: 26px;
+    margin-bottom: 110px;
 }
 .revivew-content__subinfo-service--content img {
     width: 420px;
@@ -740,6 +737,16 @@
     width: 430px;
     height: 520px;
     object-fit: cover;
+  }
+  .review-content-text {
+    font-size: 20px;
+  }
+  .review-content-text {
+    font-size: 20px;
+    margin-bottom: 80px;
+  }
+  .review-content--img-wrapper {
+    margin-bottom: 20px;
   }
   .health__grid-bottom-text {
     padding-top: 0;
@@ -984,12 +991,14 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
+    grid-row-gap: 0px;
   }
   .review-content--img-wrapper img:nth-child(3) {
     display: none;
   }
   .review-content__subinfo .review-content__subinfo-wrapper {
-    padding: 0px 10px 0px 0px;
+    padding: 10px;
+    margin-right: 0;
   }
   .review-content__subinfo img {
     bottom: 0;
@@ -1005,6 +1014,9 @@
   }
   .review_content__subinfo-service--list {
     padding-left: 20px;
+  }
+  .review-content--right-part {
+    height: 100%;
   }
   .rules {
     justify-content: center;
@@ -1102,9 +1114,6 @@
   .dinner-content .dinner-header__item:not(:first-child) {
     margin-left: 0%;
   }
-  .dinner-subinfo__img-wrapper .dinner-subinfo__img-text .box {
-    width: 30%;
-}
   .review {
     padding-bottom: 50px;
   }
