@@ -96,7 +96,7 @@
     padding-right: 0;
   }
   .review-content-text {
-    margin-bottom: 50px;
+    margin-bottom: 140px;
   }
   .dinner-subinfo__text p {
     padding-left: 10px;
@@ -214,6 +214,12 @@
   .intro__booking-input.input-1::after, .intro__booking-input.input-2::after {
     height: 32px;
   }
+  .health .box img {
+    width: 20% !important;
+    height: 90%;
+    overflow: visible;
+    object-fit: contain;
+}
 
   .left-part .swiper-button-next {
     top: 90%;
@@ -514,8 +520,8 @@
    width: 300px;
  }
  .review-content-text {
-   font-size: 26px;
-    margin-bottom: 140px;
+   font-size: 20px;
+    margin-bottom: 60px;
 }
 .revivew-content__subinfo-service--content img {
     width: 420px;
@@ -651,6 +657,15 @@
   .left-part img {
     width: 80%;
   }
+  .section-title {
+    line-height: 50px;
+  }
+  .review-content__subinfo .review-content__subinfo-wrapper {
+    margin-right: 0;
+  }
+  .review-content__subinfo .review-content__subinfo-wrapper {
+    padding: 10px;
+  }
   .guest__bottom {
     padding-right: 30px;
   }
@@ -658,6 +673,13 @@
 @media (max-width:1180px) {
   .health__grid-bottom {
     margin-top: 30px;
+  }
+  .gallery-slider .swiper-slide {
+    height: 180px;
+    & img {
+      width: 100%;
+      height: 180px;
+    }
   }
   .dinner-subinfo__img-wrapper {
     margin-top: 50px;
@@ -1239,6 +1261,27 @@
   .health__grid-bottom-paragraph {
     padding-right: 40px;
   }
+  .phone-title  {
+    padding-top: 10px;
+    font-size: 35px;
+  }
+  .health .box img {
+    object-fit: cover;
+  }
+  .health .phone {
+    position: absolute;
+    top: 47%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translate(-50%,-50%);
+    z-index: 5;
+    width: 55%;
+    height: 63%;
+    left: 50%;
+  }
+  .health .phone span {
+    font-size: 50px;
+  }
   #booking-form {
     overflow-y: scroll;
     justify-content: flex-start;
@@ -1324,7 +1367,7 @@
     width: 100%;
   }
   .review-content--img-wrapper img:first-child, .review-content--img-wrapper img:nth-child(2), .review-content--left-part img {
-    width: 46%;
+    width: 48%;
   }
   .plans__inner-top .plans__top-text::before {
     width: 1000px;
@@ -1436,7 +1479,6 @@
   }
   .health .box img {
     width: 30% !important;
-    height: 70%;
 }
 .health .box {
   width: 90%;
@@ -1447,6 +1489,11 @@
 .phone-title {
   justify-content: center;
   align-items: center;
+  font-size: 20px;
+}
+
+.health .phone {
+  width: 80%;
 }
   .plans__inner-text {
     padding-left: 20px;
@@ -1486,7 +1533,7 @@
     padding: 0px 0px 0px 0px;
   }
   .intro__booking-right-tooltype, .intro__booking-right-input {
-    margin-right: 0;
+    margin-right: 10px;
   }
   .intro__booking-input p,
   .intro__booking-inputs .intro__booking-input input {
@@ -1537,8 +1584,8 @@
     width: 60px;
     height: 60px;
     img {
-      width: 100%;
-      height: 100%;
+      width: 100%!important;
+      height: 100%!important;
       object-fit: contain;
     }
   }
@@ -1882,6 +1929,7 @@
  }
 
 @media (max-width: 1180px) {
+
   .guest__item--item-content .left-part {
     left: -115px!important;
   }
