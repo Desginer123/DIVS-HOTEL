@@ -165,11 +165,13 @@ let instSwiper = new Swiper(".inst-slider", {
     320: {
       slidesPerView: 1,
     },
-    772: {
+    773: {
       slidesPerView: 3,
     }
   },
 });
+
+
 
 if (window.innerWidth < 1180) {
   let gallery__grid = document.querySelector('.gallery-slider .swiper-wrapper');
@@ -223,8 +225,6 @@ let swiper = new Swiper(".deals-container", {
       prevEl: ".swiper-button-prev",
     },
   centeredSlides: true,
-  slidesPerView: 1,
-  initialSlide: 2,
   slideToClickedSlide: true,
   breakpoints: {
     1024: {
@@ -234,12 +234,18 @@ let swiper = new Swiper(".deals-container", {
         depth: 300,
         modifier: 1,
       },
+      initialSlide: 2,
+
     },
     772: {
       slidesPerView: 2,
+      initialSlide: 2,
+
     },
     320: {
       slidesPerView: 1,
+      initialSlide: 2,
+
     },
   },
   coverflowEffect: {
