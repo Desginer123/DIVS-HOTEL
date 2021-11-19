@@ -232,6 +232,7 @@ let swiper = new Swiper(".deals-container", {
       coverflowEffect: {
         rotate: 0,
         depth: 300,
+        stretch: 100,
         modifier: 1,
       },
       initialSlide: 2,
