@@ -159,6 +159,7 @@ let instSwiper = new Swiper(".inst-slider", {
       el: ".swiper-pagination",
     },
   centeredSlides: true,
+  loop: true,
   // slidesPerView: 3,
   initialSlide: 1,
   breakpoints: {
@@ -219,7 +220,7 @@ if (window.innerWidth < 1180) {
 
 let swiper = new Swiper(".deals-container", {
   effect: "coverflow",
-  grabCursor: true,
+  grabCursor: false,
   navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -232,7 +233,7 @@ let swiper = new Swiper(".deals-container", {
       coverflowEffect: {
         rotate: 0,
         depth: 300,
-        stretch: 100,
+        stretch: 150,
         modifier: 1,
       },
       initialSlide: 2,
@@ -241,7 +242,6 @@ let swiper = new Swiper(".deals-container", {
     772: {
       slidesPerView: 2,
       initialSlide: 2,
-
     },
     320: {
       slidesPerView: 1,

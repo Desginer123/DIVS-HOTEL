@@ -100,6 +100,7 @@ a {
   padding: 1.5rem 4rem;
   &:hover {
     background: linear-gradient(81.6deg, #EBB68D 2.88%, rgba(255, 255, 255, 0) 99.98%), #FFD888;
+		transition: all 0.3s ease-in-out;
   }
   &:active {
     background: linear-gradient(81.6deg, #E5D7CC 2.88%, rgba(255, 255, 255, 0) 99.98%), #F5E7CA;

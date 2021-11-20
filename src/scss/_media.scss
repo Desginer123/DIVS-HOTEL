@@ -3,7 +3,7 @@
 @media (max-width: 1601px) {
   .left-part .swiper-button-next {
     top: 90%;
-    right: -17%;
+    right: -21%;
     height: 44px;
     width: 44px
   }
@@ -12,6 +12,12 @@
   }
   .intro__booking-input.input-4{
     margin-right: 5px;
+  }
+  .gallery__title {
+    width: 100%;
+    & p {
+      transform: translate(60px,500px);
+    }
   }
   .intro__booking-right-input{
     font-size: 1.4rem;
@@ -230,11 +236,22 @@
   .intro__booking-input.input-1::after, .intro__booking-input.input-2::after {
     height: 32px;
   }
+  .intro__booking-input.input-1::before, .intro__booking-input.input-2::before {
+    bottom: 4.5px;
+  }
   .health .box img {
-    width: 20% !important;
     height: 90%;
     overflow: visible;
     object-fit: contain;
+}
+.gallery__title p {
+  transform: translate(85px,500px);
+}
+.phone-title {
+  font-size: 30px!important;
+}
+.health .box img {
+  width: 17%!important;
 }
 .guest__item--item-content .left-part {
   width: 37%;
@@ -653,12 +670,12 @@
   .guest__item--item-title {
     margin-top: 30px;
   }
-
+  .guest .swiper-wrapper {
+    height: fit-content!important
+  }
   .guest__items--item {
     left: 0;
     width: 100%;
-    overflow: hidden;
-
   }
   .guest__items {
     flex-direction: column
@@ -1050,6 +1067,20 @@
     transform: none;
     left: 0;
   }
+  .plans {
+    padding-top: 0;
+  }
+  .plans__inner-bottom {
+    margin-top: 0;  }
+  .deal-content .swiper-slide {
+    height: 276px;
+  }
+  .deal-content .swiper-container .swiper-button-prev {
+    top: 73%!important;
+  }
+  .deal-content .swiper-container .swiper-button-next {
+    top: 73%!important;
+  }
   .footer__logo img {
     height: 80px;
     width: 80px;
@@ -1108,6 +1139,9 @@
   }
   .menu__close-btn {
     margin-bottom: 10px;
+  }
+  .menu__close-btn:hover {
+    transform: none;
   }
  .menu__title {
   margin-bottom: 10px;
@@ -1285,7 +1319,7 @@
   }
   .rides .rides--subtext {
     padding: 41px 47px 56px !important;
-    bottom: -180px !important;
+    bottom: -140px !important;
   }
   .title {
     text-align: center;
@@ -1319,8 +1353,46 @@
   .health::before {
     display: none;
 }
-  .plans__inner-bottom {
+.dinner {
+  margin-top: 30px;
+}
+.dinner-subinfo__img-wrapper .dinner-subinfo__img-text span {
+  height: 30px;
+}
+.rides {
+  padding-top: 30px;
+}
+.deal {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.news__inner {
+  margin-top: 50px;
+}
+.instagram {
+    margin-bottom: 20px;
     margin-top: 40px;
+    padding-bottom: 20px;
+}
+.contacts {
+  margin-bottom: 40px;
+}
+
+
+  .review-content__subinfo-service::before, .review-content__subinfo .review-content__subinfo-wrapper::before {
+    display: none;
+  }
+  .review-content__subinfo-service {
+    padding-left: 0;
+  }
+  .review {
+    padding-top: 40px;
+  }
+
+  .guest {
+    &::before {
+      width: 100%;
+    }
   }
 
   .footer__wrapper {
@@ -1365,6 +1437,9 @@
   .intro {
     background-position: right;
   }
+  .left-part .swiper-button-next {
+    right: 13% !important;
+}
   .rides-header__img {
     display: none;
   }
@@ -1380,6 +1455,46 @@
 @media (max-width:772px) {
   .review-content-text {
     margin-bottom: 60px;
+  }
+  .intro__booking-input.input-1::before, .intro__booking-input.input-2::before {
+    bottom: 5.5px;
+  }
+  .deal-content .swiper-slide-inner {
+    height: 152px;
+  }
+  .health {
+    padding-top: 30px;
+  }
+  .review {
+    padding-bottom: 00px;
+}
+.health .box img {
+  height: 40px;
+  object-fit: contain;
+  width: 40px;
+}
+.phone-title  {
+  font-size: 16px!important;
+}
+.health .phone span {
+  height: 48px;
+  font-size: 48px;
+}
+.health .phone {
+  height: 70%!important;
+  padding-top: 10px;
+}
+.dinner {
+  margin-top: 10px;
+}
+.dinner-content .dinner-header {
+  padding-top: 10px;
+}
+.dinner-subinfo {
+  margin-top: 20px;
+}
+  .deal-content .slide-inner-title {
+    margin-bottom: 20px;
   }
   .map__info-title {
     padding: 5px 10px;
@@ -1418,6 +1533,7 @@
   }
   .review-content--img-wrapper {
     flex-direction: row;
+    justify-content: space-between;
   }
   .health__grid-center picture:not(:last-child) {
     margin-right: 0;
@@ -1529,9 +1645,12 @@
   }
   .review-content--img-wrapper {
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
   }
   .review-content--img-wrapper img:first-child, .review-content--img-wrapper img:nth-child(2), .review-content--left-part img {
-    width: 48%;
+    width: 100%;
   }
   .plans__inner-top .plans__top-text::before {
     width: 1000px;
@@ -1639,6 +1758,25 @@
   }
   .health .box img {
     width: 30% !important;
+}
+.footer__phones {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column
+}
+.footer__links-wrapper {
+  width: 100%;
+}
+.footer__contacts-address .address, .footer__email, .footer__links-link, .footer__phones {
+  font-size: 14px;
+}
+.menu__close-btn {
+  width: 26px;
+  height: 27px;
+  position: absolute;
+  left: 0;
+  top: 28px;
 }
 .health .box {
   width: 90%;
@@ -1843,10 +1981,6 @@
   .deal-content {
     margin: 20px 0;
   }
-
-  .gallery-slider .swiper-button-next, .gallery-slider .swiper-button-prev {
-    top: 60%;
-  }
   .gallery__grid img {
     height: 180px;
   }
@@ -1859,8 +1993,8 @@
   }
 
   .deal-content .slide-inner-title {
-    font-size: 14px;
-    margin-bottom: 45px;
+    font-size: 20px;
+    margin-bottom: 17px;
   }
   .deal {
     padding-top: 30px;
@@ -1962,10 +2096,10 @@
 @media (max-width: 1024px) {
   .deal-content .swiper-container .swiper-button-prev {
     left: 27%;
-    top: 81%;
+    top: 84%;
   }
   .deal-content .swiper-container .swiper-button-next {
-    top: 81%;
+    top: 84%;
     right: 27%
   }
   .modal-content .subtitle {
@@ -2023,6 +2157,19 @@
     position: relative;
     top: 20px;
 }
+.guest .swiper-slide-prev {
+  right: 0;
+}
+.guest__item--item-content > .left-part > .btn {
+  top: 40px;
+}
+.guest__item--item-content {
+  overflow: hidden;
+}
+.guest__item--item-title {
+  text-align: center;
+  padding: 0 15px;
+}
 }
 @media (max-width: 530px) {
   .guest__item--item-title {
@@ -2058,11 +2205,7 @@
 }
 
 
-@media (max-width: 1155px) {
-  .left-part .swiper-button-next {
-    right: 9%!important;
-  }
-}
+
 
 @media (min-width: 1160px) {
   .modal-content {
@@ -2083,17 +2226,20 @@
     left: 104px!important;
   }
   .right-part {
-    margin-top: 80px!important;
+    margin-top: 0px!important;
   }
     .guest-slider .swiper-button-prev {
       top: 68%!important;
       left: 35%!important;
   }
+  .guest__items--item::before {
+    display: none;
+  }
 .guest-slider {
   left: 0!important;
 }
   .left-part .swiper-button-next, .left-part .swiper-button-prev {
-    top: 72%!important;
+    top: 90%!important;
   }
   .guest__item--item-content .left-part {
     width: 100%!important;
@@ -2101,7 +2247,7 @@
     left: -95px!important;
 }
 .guest__item--item-title {
-  margin-top: 50px;
+  margin-top: 20px;
 }
  }
 
@@ -2114,8 +2260,12 @@
     max-width: 440px!important;
     left: 113px!important;
     position: relative!important;
-    top: 20px!important;
   }
+  .left-part .swiper-button-next {
+    top: 72%;
+    right: 9%;
+    height: 44px;
+}
 
 }
 
@@ -2139,15 +2289,20 @@
 @media (max-width: 565px) {
   .deal-content .swiper-container .swiper-button-prev {
     left: 1.5%!important;
-    top: 82%;
+    top: 75%!important;
 }
 .deal-content .swiper-container .swiper-button-next {
-    top: 82%;
+    top: 75%!important;
     right: 1.5%!important;
+}
+.deal-content .swiper-slide-inner {
+  height: 145px;
+
 }
 .deal-content .swiper-slide-inner button {
     font-size: 12px;
 }
+
 .deal-content .swiper-slide-inner {
   margin-bottom: 0;
 }
@@ -2213,4 +2368,35 @@
       width: 75%;
     }
   }
+}
+
+@media (max-width: 420px) {
+  .deal-content .slide-inner-title {
+    font-size: 18px;
+    margin-bottom: 17px;
+    padding: 0 5px;
+}
+}
+
+@media (max-width: 380px) {
+  .deal-content .slide-inner-title {
+    font-size: 14px;
+    margin-bottom: 14px;
+    padding: 0 5px;
+}
+.revivew-content__subinfo-service--content img {
+  width: 100%;
+}
+.health__grid-top-left .top__left-text {
+  padding-left: 0;
+}
+.deal-content .swiper-slide-inner button {
+  padding: 5px 20px
+}
+.deal-content .swiper-slide-inner {
+  height: 140px;
+}
+.guest__item--item-content > .left-part > .btn {
+  font-size: 1.5rem;
+}
 }
