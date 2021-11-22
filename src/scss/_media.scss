@@ -7,6 +7,15 @@
     height: 44px;
     width: 44px
   }
+  .health .phone {
+    width: 45%;
+  }
+  .health .phone span {
+    height: 60px;
+  }
+  .dinner-subinfo__img-wrapper .dinner-subinfo__img-text span {
+    height: 30px;
+  }
   .intro__booking-input input{
     max-width: 120px;
   }
@@ -49,9 +58,30 @@
     width: 100%;
   }
   .modal-content {
-    width: 100%;
-    height: 76%;
+    width: 65%;
+    height: 550px;
     overflow-y: hidden;
+    & .title {
+      font-size: 30px;
+    }
+    & .subtitle {
+      font-size: 20px;
+    }
+    #booking-form {
+      margin-top: 20px;
+    }
+    & .inputs-wrapper {
+      grid-row-gap: 5px;
+    }
+    & .inputs-item {
+      font-size: 24px;
+    }
+    & #comment {
+      height: 87px;
+    }
+    & .inputs-wrapper {
+      max-width: 650px;
+    }
   }
   .modal.show {
     padding: 0px 20px;
@@ -248,7 +278,13 @@
   transform: translate(85px,500px);
 }
 .phone-title {
-  font-size: 30px!important;
+  font-size: 26px!important;
+}
+.health .phone span {
+  height: 53px;
+}
+.health .phone {
+  width: 55%;
 }
 .health .box img {
   width: 17%!important;
@@ -761,6 +797,9 @@
   .health__grid-bottom {
     margin-top: 30px;
   }
+  .dinner-subinfo__img-wrapper .dinner-subinfo__img-text {
+    font-size: 24px !important;
+  }
   .gallery-slider .swiper-slide {
     height: 180px;
     & img {
@@ -1032,22 +1071,7 @@
 
 
 
-@media (max-width: 484px) {
-  .intro__booking-right {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .intro__booking-textarea_link {
-    margin-bottom: 10px;
-  }
-  .intro__booking-right-tooltype {
-    margin-top: 20px;
-  }
-  .intro__booking-right-input {
-    margin-top: 10px;
-  }
-}
+
 
 @media (max-width: 392px) {
   .intro__booking-title {
@@ -1350,6 +1374,10 @@
     display: inline-block;
     margin: 0 auto;
   }
+  .modal-content {
+    width: 100%;
+    height: 86%;
+  }
   .health::before {
     display: none;
 }
@@ -1459,6 +1487,7 @@
   .intro__booking-input.input-1::before, .intro__booking-input.input-2::before {
     bottom: 5.5px;
   }
+
   .deal-content .swiper-slide-inner {
     height: 152px;
   }
@@ -1474,15 +1503,14 @@
   width: 40px;
 }
 .phone-title  {
-  font-size: 16px!important;
+  font-size: 24px!important;
 }
 .health .phone span {
-  height: 48px;
+  height: 55px;
   font-size: 48px;
 }
 .health .phone {
-  height: 70%!important;
-  padding-top: 10px;
+  height: 40%!important;
 }
 .dinner {
   margin-top: 10px;
@@ -1542,7 +1570,6 @@
     padding-right: 40px;
   }
   .phone-title  {
-    padding-top: 10px;
     font-size: 35px;
   }
   .health .box img {
@@ -1555,7 +1582,7 @@
     -ms-transform: translateY(-50%);
     transform: translate(-50%,-50%);
     z-index: 5;
-    width: 55%;
+    width: 40%;
     height: 63%;
     left: 50%;
   }
@@ -1801,6 +1828,23 @@
 }
 .dinner-subinfo__img-text {
   width: 70%;
+}
+.health .phone {
+  height: 60% !important;
+}
+.health .box img {
+  object-fit: contain;
+
+}
+.health .phone span {
+  height: 45px;
+}
+.phone-title {
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.health .box {
+  width: 80%;
 }
 .dinner-subinfo__img-wrapper .dinner-subinfo__img-text {
   padding: 0;
@@ -2399,4 +2443,33 @@
 .guest__item--item-content > .left-part > .btn {
   font-size: 1.5rem;
 }
+}
+
+@media (max-width: 484px) {
+  .intro__booking-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .phone-title {
+    padding-top: 5px;
+  }
+  .health .box {
+    width: 80%!important;
+  }
+  .phone-title {
+    font-size: 18px !important;
+  }
+  .intro__booking-textarea_link {
+    margin-bottom: 10px;
+  }
+  .intro__booking-right-tooltype {
+    margin-top: 20px;
+  }
+  .intro__booking-right-input {
+    margin-top: 10px;
+  }
+  .health .phone {
+    height: 80% !important;
+  }
 }

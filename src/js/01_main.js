@@ -583,3 +583,18 @@ let guestSlider = new Swiper(".guest-slider", {
  } else {
    // do nothing
  }
+
+let inputs = document.querySelectorAll('#num1, #num2');
+console.log(inputs);
+inputs.forEach((item, i) => {
+  item.addEventListener('keydown', (e) => {
+    console.log(e.keyCode)
+    if(e.keyCode === 48 || e.keyCode === 49 || e.keyCode === 50 || e.keyCode === 51 || e.keyCode === 52 || e.keyCode === 53 || e.keyCode === 54 || e.keyCode === 55 || e.keyCode === 56 || e.keyCode === 57  ) {
+        // e.preventDefault();
+        // return false
+    } else {
+      e.preventDefault();
+      return false
+    }
+  })
+});
