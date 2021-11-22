@@ -271,7 +271,7 @@ input::-webkit-inner-spin-button {
   overflow-x: hidden;
   padding-top: 120px;
   background: url(../img/review-bg-top.png) top right no-repeat, url(../img/review-bg-left.png) center left no-repeat;
-
+  background-size: 30%;
   padding-bottom: 30px;
   .section-title {
     z-index: 2;
@@ -375,6 +375,7 @@ input::-webkit-inner-spin-button {
 }
 .intro__booking-input.input-1, .intro__booking-input.input-2{
   position: relative;
+
   &::before{
     content: '';
     position: absolute;
@@ -402,8 +403,16 @@ input::-webkit-inner-spin-button {
   padding: 7px 0 7px 12px;
   position: relative;
   outline: none!important;
-
 }
+.checkbox {
+  text-align: center;
+margin-top: 5px;
+}
+
+input, textarea {
+  outline: none!important;
+}
+
 .intro__booking-input.input-3 input, .intro__booking-input.input-4 input{
   text-align: center;
   padding: 7px 0px;
@@ -618,7 +627,7 @@ input::-webkit-inner-spin-button {
 .health {
   position: relative;
   background-image: url(../img/health-bg.png);
-  background-size: 2100px auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   padding-top: 60px;
   margin-bottom: 0px;
@@ -634,7 +643,9 @@ input::-webkit-inner-spin-button {
     background-image: url(../img/health-cloud-left.png);
     z-index: 2;
     height: 800px;
-    width: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+
   }
   &::before{
     content: '';
@@ -643,7 +654,8 @@ input::-webkit-inner-spin-button {
     background-image: url(../img/health-right-figure.png);
     z-index: 0;
     height: 500px;
-    width: 600px;
+    width: 50%;
+    background-repeat: no-repeat;
     right: 0;
   }
   &__inner-grid {
@@ -684,13 +696,15 @@ transform: translate(-50%, -50%);
 z-index: 5;
 width: 55%;
 left: 50%;
+height: 50%;
 & span {
   margin-left: 40px;
 color: #fff;
 font-size: 48px;
-height: 72px;
+height: 45px;
+font-family: Cormorant Infant;
 }
-& box {
+& .box {
   margin-top: 10px;
 }
 }
@@ -1193,7 +1207,7 @@ left: -70px;
         margin-top: 14px;
         display: flex;
         justify-content: space-between;
-        width: 55%;
+        width: 60%;
         align-items: center;
         & img {
           height: 47px;
@@ -1415,6 +1429,10 @@ justify-content: center;
 
 }
 
+.phonte-title .box {
+  height: 60px;
+}
+
 .inputs-item-1 { grid-area: 1 / 1 / 2 / 2; display: flex;
 flex-direction: column; & input {
   background: #FFFFFF;
@@ -1462,7 +1480,7 @@ border-radius: 11px; margin-top: 5px;
 
 .rides {
     background-image: url(../img/rides-bg.png);
-    background-size: 100% auto;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     padding-top: 144px;
     background-position: center;
@@ -2189,7 +2207,7 @@ border-radius: 6px;
     content: '';
     position: absolute;
     bottom: -5px;
-    width: 15px;
+    width: 80%;
     height: 1px;
     background-color: #525252
   }
@@ -2307,6 +2325,14 @@ border-radius: 6px;
   }
 }
 
+
+input[type="date"]::before{
+    color: #999;
+    content: attr(placeholder) ": ";
+}
+input[type="date"]:focus::before {
+    content: "" !important;
+}
 
 
 

@@ -242,10 +242,12 @@ let swiper = new Swiper(".deals-container", {
     772: {
       slidesPerView: 2,
       initialSlide: 2,
+      spaceBetween: 0,
     },
     320: {
       slidesPerView: 1,
       initialSlide: 2,
+      spaceBetween: 30,
 
     },
   },
@@ -598,3 +600,18 @@ inputs.forEach((item, i) => {
     }
   })
 });
+
+
+if (window.innerWidth > 992) {
+  $('input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"]').each(function() {
+      var el = this, type = $(el).attr('type');
+      if ($(el).val() == '') $(el).attr('type', 'text');
+      $(el).focus(function() {
+          $(el).attr('type', type);
+          el.click();
+      });
+      $(el).blur(function() {
+          if ($(el).val() == '') $(el).attr('type', 'text');
+      });
+  });
+}

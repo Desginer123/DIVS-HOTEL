@@ -9,9 +9,10 @@
   }
   .health .phone {
     width: 45%;
+    height: 45%;
   }
   .health .phone span {
-    height: 60px;
+    height: 30px;
   }
   .dinner-subinfo__img-wrapper .dinner-subinfo__img-text span {
     height: 30px;
@@ -269,6 +270,18 @@
   .intro__booking-input.input-1::before, .intro__booking-input.input-2::before {
     bottom: 4.5px;
   }
+  .intro__booking-input, .intro__booking-right-input {
+    font-size: 1.6rem;
+  }
+  .phone-title {
+    height: 80%;
+  }
+  .health .phone {
+    height: 55%;
+  }
+  .health .box {
+    margin-top: 15px;
+  }
   .health .box img {
     height: 90%;
     overflow: visible;
@@ -281,10 +294,11 @@
   font-size: 26px!important;
 }
 .health .phone span {
-  height: 53px;
+  height: 30px;
 }
 .health .phone {
   width: 55%;
+  height: 55%;
 }
 .health .box img {
   width: 17%!important;
@@ -308,7 +322,7 @@
     border-radius: 15px;
     padding: 20px 64px 20px 40px;
     font-weight: 600;
-    margin-right: 50px;
+    margin-right: 25px;
 }
 .guest__item--item-content > .left-part {
     margin-right: 142px;
@@ -408,7 +422,10 @@
     width: 100%;
   }
   .intro__booking-input {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+    & input[type="date"] {
+      font-size: 1.45rem;
+    }
   }
   .container {
     max-width: 1000px;
@@ -1091,6 +1108,12 @@
     transform: none;
     left: 0;
   }
+  .health .phone span {
+    height: 35px;
+  }
+  .health .phone {
+    height: 70%;
+  }
   .plans {
     padding-top: 0;
   }
@@ -1374,6 +1397,9 @@
     display: inline-block;
     margin: 0 auto;
   }
+  .intro__booking-input.input-1::after, .intro__booking-input.input-2::after {
+    height: 34px;
+  }
   .modal-content {
     width: 100%;
     height: 86%;
@@ -1487,6 +1513,9 @@
   .intro__booking-input.input-1::before, .intro__booking-input.input-2::before {
     bottom: 5.5px;
   }
+  .lightbox-image {
+    width: 85vw;
+  }
 
   .deal-content .swiper-slide-inner {
     height: 152px;
@@ -1504,13 +1533,15 @@
 }
 .phone-title  {
   font-size: 24px!important;
+  height: 80%;
+
 }
 .health .phone span {
-  height: 55px;
+  height: 30px;
   font-size: 48px;
 }
 .health .phone {
-  height: 40%!important;
+  height: 45%!important;
 }
 .dinner {
   margin-top: 10px;
@@ -1837,7 +1868,10 @@
 
 }
 .health .phone span {
-  height: 45px;
+  height: 30px;
+}
+.health .phone .box {
+    margin-top: 5px;
 }
 .phone-title {
   justify-content: space-between;
@@ -2082,10 +2116,10 @@
 
 @media (min-width: 1450px) {
   .intro__booking-input {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .intro__booking-right-input {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .intro__booking-right {
@@ -2169,8 +2203,24 @@
     font-size: 10px;
   }
   .lightbox-text-content {
-    display: none;
+    visibility: hidden;
   }
+  #right, #left {
+    visibility: visible;
+    top: -10%;
+    position: absolute;
+    outline: none!important;
+    border-radius: 100%;
+    height: 44px;
+    width: 44px;
+    background-color: #fff;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+
+  }
+
   .modal-subinfo, .modal-content .checkbox {
     font-size: 16px;
   }
@@ -2300,6 +2350,13 @@
   .guest__item--item-content .left-part {
     left: -115px!important;
   }
+  .btn--more {
+    display: none;
+  }
+  .gallery {
+    padding-bottom: 70px;
+  }
+
   .guest__item--item-content > .left-part > .btn {
     max-width: 440px!important;
     left: 113px!important;
@@ -2470,6 +2527,13 @@
     margin-top: 10px;
   }
   .health .phone {
-    height: 80% !important;
+    height: 85% !important;
+  }
+}
+
+
+@media (min-width: 500px) {
+  .intro__booking-input.input-1 input, .intro__booking-input.input-2 input{
+    min-width: 145px;
   }
 }
