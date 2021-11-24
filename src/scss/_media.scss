@@ -26,7 +26,8 @@
   .gallery__title {
     width: 100%;
     & p {
-      transform: translate(60px,500px);
+      transform: translate(0px,500px);
+      padding-left: 0;
     }
   }
   .intro__booking-right-input{
@@ -288,7 +289,8 @@
     object-fit: contain;
 }
 .gallery__title p {
-  transform: translate(85px,500px);
+  transform: translate(-30px,500px);
+  padding-left: 0;
 }
 .phone-title {
   font-size: 26px!important;
@@ -796,6 +798,9 @@
 @media (max-width: 680px) {
   .left-part img {
     width: 80%;
+  }
+  .dinner__center-item img {
+    height: 250px;
   }
   .section-title {
     line-height: 50px;
@@ -2509,7 +2514,7 @@
     flex-direction: column;
   }
   .phone-title {
-    padding-top: 5px;
+    padding-top: 0px;
   }
   .health .box {
     width: 80%!important;
@@ -2527,7 +2532,7 @@
     margin-top: 10px;
   }
   .health .phone {
-    height: 85% !important;
+    height: 80% !important;
   }
 }
 

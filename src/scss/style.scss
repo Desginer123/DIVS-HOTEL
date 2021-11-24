@@ -1087,6 +1087,7 @@ margin-bottom: 50px;
     }
     & img {
       width: 410px;
+
       border-radius: 6px;
     }
 
@@ -1126,6 +1127,7 @@ height: 420px;
   }
   img {
     width: 100%;
+    height: 350px;
   }
   &.rightside {
     width: 50%;
@@ -1398,7 +1400,7 @@ justify-content: center;
 }
 
 .instagram .section-title {
-  text-align: right;
+  text-align: left;
 }
 
 #booking-form {
@@ -1426,7 +1428,7 @@ justify-content: center;
   grid-row-gap: 20px;
   max-width: fit-content;
   margin-bottom: 30px;
-
+transform: scale(0.8);
 }
 
 .phonte-title .box {
@@ -1515,7 +1517,7 @@ border-radius: 11px; margin-top: 5px;
       }
     }
   .title {
-    width: 71%;
+    width: 100%;
     float: right;
   }
   &__items-wrapper {
@@ -1717,11 +1719,12 @@ border-radius: 11px; margin-top: 5px;
 }
 .gallery__title p{
   display: inline-block;
-  text-align: right;
+  text-align: left;
   margin-top: -500px;
   padding: 12px 60px 550px 250px;
-  background-color: rgba(#fff, 0.5);
-  transform: translate(0px, 500px)
+  transform: translate(0px,500px);
+  width: 100%;
+padding-left: 0;
 }
 .gallery .img-zoom {
   transition: .3s;
